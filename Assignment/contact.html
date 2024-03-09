@@ -1,0 +1,53 @@
+<style>
+    body{
+display: flex;
+flex-direction: column; justify-content: center; align-items: center;
+    }
+form
+{
+display: flex;
+justify-content: center; align-items: center; flex-direction: column; font-size: 1.5em;
+}
+input{
+font-size: 1.5em;
+}
+h1{
+font-size: 3em;
+}
+textarea{
+font-size: 1em;
+}
+.contact{
+display:flex;
+backdrop-filter: blur (15px);
+padding: 3%;
+margin-bottom: 3%;
+margin-top: 3%;
+color: white;
+font-family: Arial;
+}
+.banner{
+width: 100%; height: 20%;
+background-color: blue;
+text-align: center;
+color: white;
+font-family: Arial;
+}
+</style>
+<body background="./project background.webp">
+    <div class="banner">
+        <h1>Contact Us</h1>
+</div>
+<div class="contact">
+    <form id="form" enctype="text/plain">
+    Subject: <br>
+    <input id="subject" type="text" name="subject" placeholder="Your Name"><br>
+    Email: <br>
+    <input id="email" type="email" name="ec" placeholder="Your Email"><br>
+    Message: <br>
+    <textarea id="body" name="body" rows="5" cols="30" placeholder="Your Message"></textare>
+     <input type="submit" value="Send">
+    </form>
+</div>
+<script src="./project.js"></script>
+</body>
