@@ -15,11 +15,10 @@ let emailinput = emailInputHTML.value
 let bodyInputHTML = document-getElementById ("body" )
 let bodyinput = bodyInputHTML. value
 
-window.location.href = mailto:brienmsimmons@gmail.com;
+window.location.href = `mailto:brienmsimmons@gmail.com?subject=${subjectinput}&cc=${emailinput}&body=${bodyinput}`
 
 setTimeout(function(){
 window.location.href = ".homepage.html"
-}
-, 5000)
+} , 5000)
 
 })
